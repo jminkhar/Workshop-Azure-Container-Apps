@@ -1,5 +1,5 @@
 // require mysql
-const mysql = require("mysql");
+/*const mysql = require("mysql");
 
 // dotenv
 require("dotenv").config();
@@ -13,5 +13,5 @@ const db = mysql.createConnection({
 });
 
 // export connection
-module.exports = db;
+module.exports = db;*/
 
