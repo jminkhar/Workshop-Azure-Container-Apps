@@ -8,7 +8,7 @@ app.use(express.json());
 
 const indexRouter = require("./routes/index");
 app.use("/", indexRouter);
-
+/*
 const db = require("./config/db")
 db.connect((err) => {
     if(err){
@@ -21,7 +21,7 @@ app.listen(3000, () => {
     console.log('app listening on port 3000!');
 });
 
-
+*/
 
 
 
