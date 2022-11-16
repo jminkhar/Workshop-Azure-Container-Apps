@@ -34,10 +34,10 @@ az provider show --namespace Microsoft.App
 ### Affectation des variables
 
 ```bash
-RESOURCE_GROUP="RG-Lab2"
-LOCATION="eastus2"
-CONTAINERAPPS_ENVIRONMENT="my-environment"
-LOG_ANALYTICS_NAME="stan-workspace-lab"
+RESOURCE_GROUP="RG-Lab2-mj00"
+LOCATION="westeurope"
+CONTAINERAPPS_ENVIRONMENT="env-lab2-mj00"
+LOG_ANALYTICS_NAME="workspace-lab2-mj00"
 ```
 
 ### Création d'un ressource group
@@ -87,7 +87,7 @@ Plus d'informations sur cette commande : https://docs.microsoft.com/en-us/cli/az
 
 ```bash
 az containerapp create \
-  --name my-container-app \
+  --name container-app-mj00 \
   --resource-group $RESOURCE_GROUP \
   --environment $CONTAINERAPPS_ENVIRONMENT \
   --image mcr.microsoft.com/azuredocs/containerapps-helloworld:latest \
@@ -108,7 +108,7 @@ Ouvrir un navigateur Web et saisir le FQDN renvoyé par la commande précédente
 Affecter les variables
 
 ```bash
-ACR_NAME="stanacr2022"  
+ACR_NAME="mjacrlab2"  
 ACR_SKU="Basic"
 ```
 
